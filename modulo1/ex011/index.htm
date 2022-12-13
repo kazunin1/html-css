@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+<p>Tente abrir esse site em varios dispositivo ou simplesmente diminua o tamanho do seu navegador</p>
+<picture>
+
+    <source media="(max-width:700px )" srcset="imagem/p1.png" type="image/png">
+    <source media="(max-width:1000px )" srcset="imagem/m1.png" type="image/png">
+    <img src="imagem/g1.jpg" alt="imagem flexivel"><!--source media serve para acerta o tamanho-->
+</picture>
+    <!-- Imagem 300x300 para cel,700x700 para tabret, 1000x1000 para not e tv-->
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir Áudio em HTML</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/ex1.ogg" type="audio/ogg">
+        <source src="midia/ex1.mp3" type="audio/mpeg">
+        <p> Infelizmante nao funciona. <a href="midia/ex1.mp3"> clique aqui para poder baixar o arquivo</a></p>
+
+    </audio>
+
+</body>
+</html>
